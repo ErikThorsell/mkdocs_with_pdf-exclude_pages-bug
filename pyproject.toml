@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "my-bug-check"
+version = "0.0.0"
+authors = ["Erik Thorsell <erik@thorsell.io>"]
+description = "My awesome bug report repo"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+mkdocs = "^1.1.2"
+mkdocs-awesome-pages-plugin = "^2.5.0"
+mkdocs-material = "^7.1.1"
+mkdocs-with-pdf = "^0.8.3"
+mkdocs-git-tag-plugin = "^0.1.0"

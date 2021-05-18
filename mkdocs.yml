@@ -1,0 +1,27 @@
+site_name: Test page
+theme:
+  name: material
+  nav_style: dark
+plugins:
+  - search
+  - awesome-pages
+  - git-tag
+  - with-pdf:
+      verbose: true
+      exclude_pages:
+        - a_folder/
+      enabled_if_env: ENABLE_PDF_EXPORT
+      output_path: pdf/my_docs.pdf
+
+markdown_extensions:
+  - toc:
+      permalink: "#"
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.snippets
+nav:
+  - Overview: index.md
+  - ...  # if you replace this with > Middle: a_folder/ < things work as expected
+  - Back: back.md
